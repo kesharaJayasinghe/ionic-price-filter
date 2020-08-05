@@ -1,0 +1,66 @@
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  // .price-filter .ng5-slider .ng5-slider-bar {
+  //   // background: #ffe4d1;
+  //   // height: 2px;
+  // }
+
+  .price-filter {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    align-content: center;
+  }
+
+  .button-div {
+    text-align: center;
+
+    ion-button {
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  }
+
+  .price-filter .ng5-slider .ng5-slider-selection {
+    background: #006161;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-pointer {
+    // width: 8px;
+    // height: 16px;
+    // top: auto; /* to remove the default positioning */
+    // bottom: 0;
+    background-color: #006161;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 3px;
+    //   border-color: red;
+    outline: 0;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-pointer:after {
+    display: none;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-bubble {
+    bottom: 14px;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-limit {
+    font-weight: bold;
+    // color: orange;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-tick {
+    width: 1px;
+    height: 100px;
+    margin-left: 4px;
+    border-radius: 0;
+    background: #ffe4d1;
+    top: -1px;
+  }
+
+  .price-filter .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+    background: none;
+  }
+}

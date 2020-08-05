@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { Ng5SliderModule } from 'ng5-slider';
+import { PricefilterModalPageModule } from '../modals/pricefilter-modal/pricefilter-modal.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { Ng5SliderModule } from 'ng5-slider';
     IonicModule,
     HomePageRoutingModule,
     Ng5SliderModule,
+    PricefilterModalPageModule,
   ],
   declarations: [HomePage]
 })

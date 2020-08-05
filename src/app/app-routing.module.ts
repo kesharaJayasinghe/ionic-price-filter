@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'pricefilter-modal',
+    loadChildren: () => import('./modals/pricefilter-modal/pricefilter-modal.module').then( m => m.PricefilterModalPageModule)
+  },
 ];
 
 @NgModule({
