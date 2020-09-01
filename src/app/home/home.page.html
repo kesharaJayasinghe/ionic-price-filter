@@ -1,21 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      Range Slider
+      Range & Palette
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-chip (click)="openModal()">
+  <ion-chip (click)="openPriceModal()">
     <ion-label>Price</ion-label>
   </ion-chip>
-  <ion-chip>
+  <ion-chip (click)="openColorModal()">
     <ion-label>Color</ion-label>
   </ion-chip>
 
   <div id="container">
-    <strong>Price filter demo</strong>
+    <strong>Price & Color Filter Demo</strong>
   </div>
   <!-- <ion-button (click)="openModal()">Price Filter</ion-button>
   <p *ngIf="dataReturned">{{dataReturned}}</p> -->

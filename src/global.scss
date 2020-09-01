@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -26,10 +26,19 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 .pricefilter-css {
-    background: rgba(0, 0, 0, 0.5) !important;
-    padding: 45% 4%  !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  padding: 47% 4% !important;
 
-    .modal-wrapper{
-        border-radius: 10px !important;
+  .modal-wrapper {
+    border-radius: 10px !important;
+  }
+}
+
+.colorfilter-css {
+    background: rgba(0, 0, 0, 0.5) !important;
+    padding: 42% 4% !important;
+  
+    .modal-wrapper {
+      border-radius: 10px !important;
     }
   }

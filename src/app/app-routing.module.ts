@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'pricefilter-modal',
     loadChildren: () => import('./modals/pricefilter-modal/pricefilter-modal.module').then( m => m.PricefilterModalPageModule)
   },
+  {
+    path: 'colorfilter-modal',
+    loadChildren: () => import('./modals/colorfilter-modal/colorfilter-modal.module').then( m => m.ColorfilterModalPageModule)
+  },
 ];
 
 @NgModule({

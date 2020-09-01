@@ -1,0 +1,67 @@
+<ion-content [scrollY]="false" class="modal-content">
+  <ion-toolbar class="modal-toolbar">
+    <ion-title>
+      Select Color
+    </ion-title>
+  </ion-toolbar>
+  <div class="color-grid">
+    <!-- <ion-icon name="square" color="red"></ion-icon>
+    <ion-icon name="square"></ion-icon>
+    <br> -->
+    <ion-grid>
+
+      <!-- 1st color row -->
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-align-self-center">
+          <ion-icon name="square" style="color: #000000"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #FFFFFF"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #FF0000"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #008000"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+      <!-- 2nd color row -->
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-align-self-center">
+          <ion-icon name="square" style="color: #0000FF"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #0099CC"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #FFFF00"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #FF7B00"></ion-icon>
+        </ion-col>
+      </ion-row>
+
+      <!-- 3rd color row -->
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-align-self-center">
+          <ion-icon name="square" style="color: #844302"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #808080"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #FF748C"></ion-icon>
+        </ion-col>
+        <ion-col>
+          <ion-icon name="square" style="color: #800080"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="button-div">
+    <ion-button color="secondary" (click)="closeColorModal()">Done</ion-button>
+      <ion-button color="secondary">Clear Filter</ion-button>
+      <ion-button color="secondary" (click)="closeColorModal()">Cancel</ion-button>
+  </div>
+</ion-content>

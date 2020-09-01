@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
 // import { Options, LabelType, ChangeContext, PointerType } from "ng5-slider";
-import { PopoverController, ModalController } from "@ionic/angular";
+import { ModalController } from "@ionic/angular";
 // import { PricefilterComponent } from "../components/pricefilter/pricefilter.component";
 // import { ColorfilterComponent } from "../components/colorfilter/colorfilter.component";
 import { PricefilterModalPage } from '../modals/pricefilter-modal/pricefilter-modal.page';
+import { ColorfilterModalPage } from '../modals/colorfilter-modal/colorfilter-modal.page';
 
 @Component({
   selector: "app-home",
@@ -15,12 +16,12 @@ export class HomePage {
 
   constructor(
     public modalController: ModalController,
-    private pricefilterpop: PopoverController,
-    private colorfilterpop: PopoverController
+    // private pricefilterpop: PopoverController,
+    // private colorfilterpop: PopoverController
   ) {}
 
-  async openModal() {
-    const modal = await this.modalController.create({
+  async openPriceModal() {
+    const priceModal = await this.modalController.create({
       component: PricefilterModalPage,
       cssClass: 'pricefilter-css',
       componentProps: {
@@ -29,13 +30,31 @@ export class HomePage {
       }
     });
 
-    modal.onDidDismiss().then((dataReturned) => {
+    priceModal.onDidDismiss().then((dataReturned) => {
       if(dataReturned !== null) {
         this.dataReturned = dataReturned.data;
       }
     });
 
-    return await modal.present();
+    return await priceModal.present();
+  }
+
+  async openColorModal() {
+    const colorModal = await this.modalController.create({
+      component: ColorfilterModalPage,
+      cssClass: 'colorfilter-css',
+      componentProps: {
+        "paramID": 456,
+        'paramTitle': "Color"
+      }
+    });
+
+    colorModal.onDidDismiss().then((dataReturned) => {
+      if(dataReturned !== null) {
+        this.dataReturned = dataReturned.data;
+      }
+    });
+    return await colorModal.present();
   }
 
   // CreatePricePopover() {

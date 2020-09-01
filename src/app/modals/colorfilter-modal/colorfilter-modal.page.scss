@@ -1,0 +1,40 @@
+// Use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  .modal-content {
+    // --background: #aeffe9;
+    --background: rgba(0, 0, 0, 0.15);
+
+    .modal-toolbar {
+      --background: rgba(0, 0, 0, 0);
+    }
+  }
+  .color-grid {
+    // padding-left: 2rem;
+    // padding-right: 2rem;
+    // padding-top: 3rem;
+    // padding-bottom: 3rem;
+    // align-content: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    ion-col {
+      text-align: center;
+    }
+    ion-button {
+      color: white;
+    }
+    ion-icon {
+      font-size: 60px;
+    }
+  }
+
+  .button-div {
+    text-align: center;
+
+    ion-button {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+}

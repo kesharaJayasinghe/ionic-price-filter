@@ -38,7 +38,7 @@ export class PricefilterModalPage implements OnInit {
     this.modalTitle = this.navParams.data.paramTitle;
   }
 
-  async closeModal() {
+  async closePriceModal() {
     // const onClosedData: string = "Wrapped Up!";
     await this.modalController.dismiss();
   }
